@@ -1,23 +1,26 @@
-public abstract class Vozilo {
+public abstract class Vozilo implements Servisabilno {
     private String marka;
-    private int makimalnaBrzina;
+    private int maksimalnaBrzina;
 
-    public Vozilo(String marka, int makimalnaBrzina) {
+    public Vozilo(String marka, int maksimalnaBrzina) {
         this.marka = marka;
-        this.makimalnaBrzina = makimalnaBrzina;
+        this.maksimalnaBrzina = maksimalnaBrzina;
     }
 
     public String getMarka() {
         return marka;
     }
 
-    public int getMakimalnaBrzina() {
-        return makimalnaBrzina;
+    public int getMaksimalnaBrzina() {
+        return maksimalnaBrzina;
     }
 
     public abstract void pokreni();
 
-    public String ispisiPodatke(){
-        return "Marka vozila : " + marka + "\nMaksimalna Brzina : " + makimalnaBrzina;
+    public void ispisiPodatke(){
+        System.out.println("Marka vozila : " + marka + "\nMaksimalna Brzina : " + maksimalnaBrzina);
+    }
+
+    public void servisiraj() {
     }
 }

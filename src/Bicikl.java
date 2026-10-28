@@ -18,11 +18,11 @@ public class Bicikl extends Vozilo implements Servisabilno{
 
     @Override
     public void pokreni() {
-        System.out.print("Bicikl je pokrenut");
+        System.out.println("Bicikl je pokrenut");
     }
 
     @Override
     public void servisiraj() {
-
+        System.out.println("Treba zamjena lanca");
     }
 }

@@ -24,6 +24,6 @@ public class Automobil extends Vozilo implements Servisabilno{
 
     @Override
     public void servisiraj() {
-
+        System.out.println("Treba zamjena guma");
     }
 }
